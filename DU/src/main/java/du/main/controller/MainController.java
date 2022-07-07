@@ -38,7 +38,6 @@ public class MainController {
 		@RequestParam("user_pw")String userPw,
 		HttpServletResponse response
 		)throws Exception{
-			response.setCharacterEncoding("euc-kr");
 			
 			boolean isLogin = userService.isLogin(userId,userPw);
 			if(isLogin) {
